@@ -1,0 +1,37 @@
+1. Random computer selection for Rock, Paper or Scissors.
+2. Prompt user input --> case-insensitive.
+3. Evaluate the result.
+4. Display result as a message.
+
+
+Side Notes: 
+
+The idea is to write something along the lines of:
+
+Idea(1) {
+If user chooses paper and machine rock, user wins.
+If user chooses paper and machine scissors, user loses.
+If uses choses paper and machine aswell, it's a draw.
+
+If user choses rock and machine scissors, user wins.
+If user choses rock and machin paper, user loses.
+If they choose the same, it's a draw.
+
+If user choses scissors and machine paper (win), 
+rock (loss), scissors (draw).
+}
+
+The question is can I write that easier.
+Let's say I focus on the basic concept of the game:
+
+Idea(2) {
+
+Rock beats scissors.
+Scissors beat paper.
+Paper beats rock.
+Same choice = draw.
+
+If user chose element that won, displax Victory.
+If user chose element that lost, display Defeat.
+If they chose the same, display Draw.
+}
