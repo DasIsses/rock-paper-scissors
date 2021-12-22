@@ -35,3 +35,11 @@ If user chose element that won, displax Victory.
 If user chose element that lost, display Defeat.
 If they chose the same, display Draw.
 }
+So I have to change it up.
+I missed that the message is supposed to display
+why you won or lost. 
+Like so "You Lose! Paper beats Rock".
+
+
+Now I have to loop the playRound function 5 times, 
+keep Score and declare a winner at the end. 

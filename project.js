@@ -1,23 +1,35 @@
-let options = ["rock" , "paper" , "scissors"];
-let computerPlay = options[Math.floor(Math.random() * options.length)];
+const  options = ["rock" , "paper" , "scissors"];
+function computerPlay(){
+    return options[Math.floor(Math.random() * options.length)];
+} 
+    function playRound(playerSelection, computerSelection) {
+        // computerSelection = computerPlay().toLowerCase();
+        let playerScore = 0;
+     let computerScore = 0;
+         playerSelection = playerSelection.toLowerCase();
+         if (computerSelection == playerSelection) {
+             alert("Tie game!");
+         } else if (
+             (computerSelection == "rock" && playerSelection == "scissors") ||
+         (computerSelection == "scissors" && playerSelection == "paper") ||
+         (computerSelection == "paper" && playerSelection == "rock")
+       ) {
+        let computerScore = 0;
+           computerScore = ++computerScore;
+           alert("You Lose! " + computerSelection + " beats " + playerSelection )
+       }
+       else {
+        let playerScore = 0;
+           playerScore = ++playerScore;
+           alert("You Win! " + playerSelection + " beats " + computerSelection)
+       }
+     }
+    if (playerScore = 3) {
+        alert("You lose! The Computer won " + computerScore + ' times and you won' + playerScore + ' times.')
+    } else {
+        alert('You win! You won ' + playerScore + ' times and the computer won' + computerScore + ' times.')
+    }
 
-let playerSelection = prompt("Please select between rock, paper and scissors:");
-let computerSelection = computerPlay();
-let determineWinner(){ 
-    let result;
-if (playerSelection('rock') && computerSelection('scissors')
-playerSelection('paper') && computerSelection('rock')
-playerSelection('scissors') && computerSelection('paper')) {
-   result = 'Congratulations, You won!'
-} else if (playerSelection('rock') && computerSelection('rock')
-playerSelection('scissors') && computerSelection('scissors')
-playerSelection('paper') && computerSelection('paper'){
-    result = 'It\'s a draw!'
-}
-else{
-    result = ''
-}
-
-function playRound(playerSelection, somputerSelection) {
-}
-console.log(playerSelection);
+const playerSelection = prompt('Chose between Rock, Paper or Scissors');
+const computerSelection = computerPlay();
+console.log(playRound(playerSelection, computerSelection));
